@@ -1,3 +1,4 @@
+#Step 2: Create a dataset to train
 import cv2
 import numpy as np
 import sqlite3
@@ -27,7 +28,7 @@ while True:
         cv2.waitKey(100)
         cv2.imshow('img', img)
         cv2.waitKey(3);
-    if sampleNum > 20:
+    if sampleNum > 50:
         break	
 
 cap.release()

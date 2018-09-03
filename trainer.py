@@ -1,4 +1,4 @@
-# trainer.py
+#Step 3: Train your dataset
 
 import os
 import cv2

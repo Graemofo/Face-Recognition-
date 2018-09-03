@@ -1,4 +1,4 @@
-# detector.py
+# Step 4: Run Face Recognition Application
 
 import cv2
 import time
@@ -34,7 +34,7 @@ while True:
             fontScale,
             fontColor,
             lineType)
-        cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),3)
+        cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),1)
         ids,conf = recognizer.predict(gray[y:y+h,x:x+w])
         c.execute("select name from users where id = (?);", (ids,))
         result = c.fetchall()
